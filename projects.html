@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Shumaila's Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: url('pics/high-angle-view-smart-phone-table_1048944-235023.avif') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+            text-align: center;
+            min-height: 100vh;
+            background-color: #111;
+        }
+        header {
+            background-color: rgba(0,0,0,0.85);
+            padding: 10px;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        nav a {
+            color: #ffcc00;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 15px;
+            transition: color 0.2s;
+        }
+        nav a:hover {
+            color: #fff;
+        }
+        .back-btn {
+            position: absolute;
+            left: 20px;
+            top: 20px;
+            background: #222;
+            color: #ffcc00;
+            border: none;
+            padding: 8px 18px;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+            z-index: 20;
+        }
+        main {
+            padding: 80px 20px;
+            background: rgba(0,0,0,0.65);
+            margin: 60px auto 0 auto;
+            border-radius: 18px;
+            max-width: 900px;
+        }
+        h1 {
+            font-size: 2.5em;
+            color: #ffcc00;
+        }
+        .projects-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 36px;
+            margin-top: 40px;
+        }
+        .project-card {
+            background: rgba(34,34,34,0.93);
+            border-radius: 14px;
+            box-shadow: 0 4px 16px #222a;
+            padding: 0 0 20px 0;
+            width: 280px;
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.18s, box-shadow 0.18s;
+        }
+        .project-card:hover {
+            transform: translateY(-6px) scale(1.03);
+            box-shadow: 0 12px 36px #ffcc0066;
+        }
+        .project-img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            background: #222;
+            border-radius: 14px 14px 0 0;
+        }
+        .project-title {
+            font-size: 1.35em;
+            color: #ffcc00;
+            margin: 20px 0 6px 0;
+            font-weight: bold;
+        }
+        .project-desc {
+            font-size: 1em;
+            color: #fff9;
+            margin: 0 16px 10px 16px;
+        }
+        .project-link {
+            display: inline-block;
+            margin: 12px auto 0 auto;
+            background: #ffcc00;
+            color: #1a1a1a;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 7px;
+            padding: 7px 18px;
+            font-size: 1em;
+            transition: background 0.18s, color 0.18s;
+        }
+        .project-link:hover {
+            background: #fff;
+            color: #111;
+        }
+        @media (max-width: 900px) {
+            .projects-list {
+                flex-direction: column;
+                align-items: center;
+                gap: 24px;
+            }
+            main { padding: 30px 2vw; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <button class="back-btn" onclick="window.location.href='skills.html'">&#8592; Back</button>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="skills.html">Skills</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <h1>My Projects</h1>
+        <div class="projects-list">
+            <!-- SR Project (first) -->
+            <div class="project-card">
+                <img class="project-img" src="pics/images (3).jpeg" alt="SR Project">
+                <div class="project-title">SR</div>
+                <div class="project-desc">
+                    SR is a comprehensive project demonstrating advanced programming and design skills.<br>
+                    <span style="color:#ffcc00;font-size:0.98em;">(See details on GitHub)</span>
+                </div>
+                <a href="https://github.com/shumaila1823/SR" class="project-link" target="_blank">View on GitHub</a>
+            </div>
+            <!-- Calculator -->
+            <div class="project-card">
+                <img class="project-img" src="pics/business-objects-office-on-table-260nw-651304621.webp" alt="Calculator Project">
+                <div class="project-title">Calculator</div>
+                <div class="project-desc">
+                    A simple yet functional calculator built with a clean interface and essential arithmetic operations.
+                </div>
+                <a href="https://github.com/shumaila1823/calculator" class="project-link" target="_blank">View on GitHub</a>
+            </div>
+            <!-- Expense Tracker -->
+            <div class="project-card">
+                <img class="project-img" src="pics/images (5).jpeg" alt="Expense Tracker Project">
+                <div class="project-title">Expense Tracker</div>
+                <div class="project-desc">
+                    Track your daily expenses efficiently with this easy-to-use expense tracking application.
+                </div>
+                <a href="https://github.com/shumaila1823/expense_tracker" class="project-link" target="_blank">View on GitHub</a>
+            </div>
+            <!-- Movie Booking System -->
+            <div class="project-card">
+                <img class="project-img" src="pics/images (4).jpeg" alt="Movie Booking System Project">
+                <div class="project-title">Movie Booking System</div>
+                <div class="project-desc">
+                    A movie booking system for reserving seats and managing bookings, built with a focus on user experience.
+                </div>
+                <a href="https://github.com/shumaila1823/Movie_Booking_system" class="project-link" target="_blank">View on GitHub</a>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

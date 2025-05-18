@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Shumaila's Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: url('pics/top-view-desk-dark-concept-with-copy-space_23-2148459467.avif') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+            text-align: center;
+            min-height: 100vh;
+            background-color: #111;
+        }
+        header {
+            background-color: rgba(0,0,0,0.85);
+            padding: 10px;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        nav a {
+            color: #ffcc00;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 15px;
+            transition: color 0.2s;
+        }
+        nav a:hover {
+            color: #fff;
+        }
+        .back-btn {
+            position: absolute;
+            left: 20px;
+            top: 20px;
+            background: #222;
+            color: #ffcc00;
+            border: none;
+            padding: 8px 18px;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+            z-index: 20;
+        }
+        main {
+            padding: 80px 20px;
+            background: rgba(0,0,0,0.65);
+            margin: 60px auto 0 auto;
+            border-radius: 18px;
+            max-width: 700px;
+        }
+        h1, h2 {
+            color: #ffcc00;
+        }
+        .contact-info { font-size: 1.2em; margin-bottom: 30px; }
+        .contact-info a { color: #ffcc00; }
+        .contact-form {
+            margin: 0 auto 40px auto;
+            max-width: 400px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #333;
+            background: #222;
+            color: #fff;
+            font-size: 1em;
+        }
+        .contact-form button[type="submit"] {
+            padding: 10px 24px;
+            background: #ffcc00;
+            color: #222;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.2s, color 0.2s;
+        }
+        .contact-form button[type="submit"]:hover {
+            background: #fff;
+            color: #111;
+        }
+        .accounts {
+            margin-top: 35px;
+            padding-top: 20px;
+            border-top: 1px solid #444;
+            font-size: 1.1em;
+        }
+        .accounts a {
+            color: #ffcc00;
+            text-decoration: none;
+            margin: 0 12px;
+            transition: color 0.2s;
+        }
+        .accounts a:hover {
+            color: #fff;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <button class="back-btn" onclick="window.location.href='projects.html'">&#8592; Back</button>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="skills.html">Skills</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Contact Me</h1>
+       
+        <section>
+            <!-- This form will open the user's email client to send the message to rshumaila316@gmail.com -->
+            <form class="contact-form" action="mailto:rshumaila316@gmail.com" method="POST" enctype="text/plain">
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="Email" placeholder="Your Email" required>
+                <textarea name="Message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+        <div class="accounts">
+           <h2> <span>Find me on:</span></h2><br>
+            <a href="https://medium.com/@rshumaila316" target="_blank">Medium</a> |
+            <a href="https://www.linkedin.com/in/shumaila-ramzan-9a82072b9?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">LinkedIn</a> |
+            <a href="https://github.com/shumaila1823" target="_blank">GitHub</a>
+        </div>
+    </main>
+</body>
+</html>

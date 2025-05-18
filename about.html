@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About Me - Shumaila</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+    body {
+      margin: 0;
+      padding: 0;
+      background: url('pics/corporate-identity-template-blank-stationery-260nw-653504377.webp') no-repeat center center fixed;
+      background-size: cover;
+      font-family: 'Segoe UI', Arial, sans-serif;
+    }
+    header {
+      background-color: rgba(0,0,0,0.85);
+      padding: 10px 0;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      width: 100%;
+    }
+    nav {
+      text-align: center;
+    }
+    nav a {
+      color: #ffcc00;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 0 15px;
+      transition: color 0.2s;
+    }
+    nav a:hover {
+      color: #fff;
+    }
+    .back-btn {
+      position: absolute;
+      left: 20px;
+      top: 20px;
+      background: #222;
+      color: #ffcc00;
+      border: none;
+      padding: 8px 18px;
+      border-radius: 5px;
+      font-size: 1em;
+      cursor: pointer;
+      z-index: 20;
+    }
+    .about-title {
+      text-align: center;
+      margin-top: 30px;
+      letter-spacing: 1px;
+      font-size: 3rem;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.18);
+      font-family: 'Javanese Text', cursive, 'Segoe Script', sans-serif;
+      color: #ffcc00;
+      font-weight: bold;
+      /* Stylish effect */
+      background: linear-gradient(90deg, #ffcc00 80%, #fff700 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .about-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      max-width: 950px;
+      margin: 40px auto 0 auto;
+      background: rgba(20, 20, 20, 0.94);
+      box-shadow: 0 4px 32px rgba(0,0,0,0.85);
+      border-radius: 18px;
+      padding: 40px;
+      gap: 40px;
+    }
+    .about-container .about-title-inside {
+      /* Inside black shadow area, large, yellow, and stylish */
+      text-align: center;
+      font-family: 'Javanese Text', cursive, 'Segoe Script', sans-serif;
+      font-size: 3rem;
+      color: #ffcc00;
+      font-weight: bold;
+      letter-spacing: 2px;
+      margin-top: 0;
+      margin-bottom: 10px;
+      
+      background: linear-gradient(90deg, #ffcc00 80%, #fff700 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      /* for better cross-browser support */
+      background-clip: text;
+    }
+    .about-content-wrapper {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      gap: 50px;
+    }
+    .profile-pic-wrapper {
+      width: 300px;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(30,30,30,0.92);
+      border-radius: 24px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.33);
+    }
+    .profile-pic {
+      width: 300px;
+      height: 350px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 6px solid #ffcc00;
+      box-shadow: 0 4px 16px rgba(77,144,254,0.12);
+      background-color: #fff;
+    }
+    .about-content {
+      flex: 1;
+      text-align: left;
+      color: #fff;
+    }
+    .about-content h2 {
+      margin-top: 0;
+      color: #ffcc00;
+      font-size: 2.2rem;
+      letter-spacing: 1px;
+      font-family: 'Segoe UI', Arial, sans-serif;
+    }
+    .about-content p {
+      font-size: 1.18rem;
+      line-height: 1.7;
+      margin-bottom: 15px;
+      color: #eee;
+    }
+    @media (max-width: 1000px) {
+      .about-container {
+        gap: 20px;
+        padding: 28px;
+      }
+      .about-content-wrapper {
+        gap: 20px;
+      }
+    }
+    @media (max-width: 850px) {
+      .about-container {
+        padding: 22px;
+        gap: 24px;
+      }
+      .about-title {
+        font-size: 3rem;
+        margin-top: 20px;
+      }
+      .about-container .about-title-inside {
+        font-size: 2.5rem;
+      }
+      .about-content-wrapper {
+        flex-direction: column;
+        gap: 18px;
+      }
+      .profile-pic-wrapper {
+        width: 220px;
+        height: 250px;
+      }
+      .profile-pic {
+        width: 220px;
+        height: 220px;
+      }
+      .about-content h2 {
+        font-size: 1.4rem;
+      }
+      .about-content p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <button class="back-btn" onclick="window.location.href='index.html'">&#8592; Back</button>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="skills.html">Skills</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  
+  <div class="about-container">
+    <div class="about-title-inside">About Me</div>
+    <div class="about-content-wrapper">
+      <div class="profile-pic-wrapper">
+        <img src="pics/WhatsApp Image 2025-05-11 at 11.12.03_a0ab951c.jpg" alt="Shumaila's Photo" class="profile-pic">
+      </div>
+      <div class="about-content">
+        <h2>Assalam-o-Alaikum! I'm Shumaila</h2>
+        <p>
+          I'm a dedicated BS Mathematics student with a passion for analytical thinking, creativity, and continuous growth. My academic background has given me a strong foundation in pure and applied mathematics, including calculus, linear algebra, statistics, and mathematical modeling. I enjoy exploring how mathematical principles can be applied to solve real-world challenges and support technological development.
+        </p>
+        <p>
+          In addition to my studies, I have developed practical skills in HTML, CSS, Java, Python, MS Office, advanced Excel, Maple, and creative software such as Adobe Photoshop, Illustrator, Corel DRAW, and video editing.
+        </p>
+        <p>
+          I also have a basic understanding of Chinese and Korean, adding a multicultural dimension to my communication abilities. I’m a highly motivated and enthusiastic learner, always ready to take on new challenges in both academic and professional environments.
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
